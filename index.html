@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>currency Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
-    start typing code here
-    <h2>hello world</h2>
-    nice job
+    <form id="form">
+        <div class="container container-fluid">
+            <div><h1>Currency Converter</h1></div>
+            <div><h3>Convert currency with current exchange rate</h3></div>
+            <div class="form-group">
+                <label for="naira">Naira</label>
+                <input type="number" name="naira" class="field" placeholder="NGN ex. 500" id="naira">
+                <div id="error1" class="hint2"></div>
+                <div id="forex" class="hint"></div>
+            </div>
+
+            <div class="form-group">
+                    <label for="dollar">Dollar</label>
+                    <input type="number" name="dollar" placeholder="USD" class="field" id="dollar" min="1" max="5">
+                    <div id="error2" class="hint2"></div>
+            </div> <br>
+
+
+            <div class="form-group" id="Calculate"><button type="button" class="btn btn-primary button">Calculate</button></div>
+
+            <div class="form-group" id="reset"><button type="reset" class="btn btn-secondary">reset</button></div>
+
+            <div id="result"></div>
+            
+        </div>
+    </form>
+
+
+    <script src="script/script.js"></script>
 </body>
 </html>
